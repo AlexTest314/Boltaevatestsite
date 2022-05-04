@@ -142,11 +142,22 @@ ul > div > div > li {
     margin: 0;
 }
 
-.right-arrow {
-    width: 120px;
-    height: 88px;
+.right-arrow{
+    width: 125px;
+    height: 90px;
+    fill: transparent;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    position: absolute;
+    top: 45%;
+    left: 91%;
+    filter: blur(1px);
+}
+
+.right-arrow--upper {
+    width: 125px;
+    height: 90px;
     fill: #fff;
-    background: rgba(0, 0, 0, 0.1);
     border-radius: 40px;
     position: absolute;
     top: 45%;
@@ -154,15 +165,31 @@ ul > div > div > li {
 }
 
 .left-arrow {
-    width: 120px;
-    height: 88px;
-    fill: #fff;
-    background: rgba(0, 0, 0, 0.1);
+    width: 125px;
+    height: 90px;
+    fill: transparent;
+    background: rgba(0, 0, 0, 0.25);
     border-radius: 40px;
     rotate: 180deg;
     position: absolute;
     top: 45%;
     left: 1%;
+    filter: blur(1px);
+}
+
+.left-arrow--upper{
+    width: 125px;
+    height: 90px;
+    fill: #fff;
+    border-radius: 40px;
+    rotate: 180deg;
+    position: absolute;
+    top: 45%;
+    left: 1%;
+}
+
+.circle {
+    fill: #fff;
 }
 
 .circle--bg {
