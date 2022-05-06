@@ -25,6 +25,12 @@
     font-style: normal;
 }
 
+:root {
+    --fontReg: 'Cera Pro';
+    --fontBold: 'CeraPro-Bold';
+    --fontThin: 'Cera Pro Thin';
+}
+
 a {
     padding: 0.5rem 0.5rem;
 }
@@ -362,73 +368,260 @@ ul>div>div>li {
 }
 
 .advertising-head {
-    position: relative;
-    height: 26.5rem;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     background: #f5ece3;
-    
 }
 
+.advertising-head__container {
+    padding-top: 8.5rem;
+    padding-bottom: 6.25rem;
+    margin: 0 auto;
+    width: 81.25rem;
+    display: flex;
+    justify-content: space-between;
+}
 
 .phra {
-    position: absolute; 
     margin: 0;
     padding: 0;
-    font-family: "Cera Pro Thin";
     font-size: 3rem;
-    left: 4.5rem;
-    width: 37.5rem;
-    top: 9rem;
-    background: #f5ece3;
+    font-family: var(--fontThin);
+    width: 37.6rem;
 }
 
 .insta-position {
     position: relative;
-    background: rgba(238,228,218);
+    align-self: flex-end;
+    background: #EEE4DA;
+    backdrop-filter: blur(14px);
     height: 5rem;
-    width: 19.3rem;
-    border-radius: 4.125rem;
-    right: 4.5rem;
-    top: 15.4rem;
+    width: 19.375rem;
+    border-radius: 4rem;
     
 }
 
 .insta__link {
     position: absolute;
-    margin: 0;
-    padding: 2rem 2rem 6.3rem 6.3rem;
+    font-family: var(--fontReg);
     text-decoration: none;
     color: #555;
-    font-size: 1.25rem;
-    font-family: "Cera Pro";
-    top: -10%;
-    left: -0%;
-    
+    left: 0.3rem;
+    top: 0rem;
+    padding: 2rem 6.25rem;
 }
 
 .insta__link:hover {
-    color: #b48383;
+    color: #a76f6f;
 }
-
-
 .insta-icon {
-    height: 1rem;
-    width: 1rem;
+    height: 1.125rem;
+    width: 1.125rem;
     fill: #555;
-}
-
-.insta-icon:hover {
-    fill: #b48383;
+    padding-right: 0.625rem;
 }
 
 .product__advertising {
-    height: 100vh;
+    background: #f5ece3;
+    
 }
 
-.advertising-container {
+.product__advertising__container {
+    width: 81.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    left: 4.5rem;
+    margin: 0 auto;
+    padding-bottom: 7.5rem;
+}
+
+.product__advertising__item {
+    height: 19.375rem;
+    width: 19.375rem;
+    margin-right: 1.25rem;
+    margin-bottom: 1.25rem ;
+    flex: 1;
+}
+
+.product__advertising__item:nth-child(5) {
+    margin-bottom: 0;
+}
+
+.product__advertising__item:nth-child(6) {
+    margin-bottom: 0;
+}
+
+.product__advertising__item:nth-child(7) {
+    margin-bottom: 0;
+}
+
+.product__advertising__item:nth-child(8) {
+    margin-bottom: 0;
+}
+
+.product__advertising__item:nth-child(4n) {
+    margin-right: 0;
+}
+
+.footer {
+    background: #eee4da;
+}
+
+.footer__header {
+    width: 81.25rem;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
+    
+}
+
+.footer__contain {
+    margin: 0;
+    padding: 0;
+    height: 9.75rem;
+    border-bottom: 2px solid rgba(0,0,0, 0.05);
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.footer__header--color-brown {
+    margin: 0;
+    padding: 0;
+    font-family: "CeraPro-Bold";
+    color: #ae937e;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    letter-spacing: 0.625rem;
+}
+
+.footer__main {
+    margin: 0 auto;
+    width: 81.25rem;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__company {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footer__company__item {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 1.625rem;
+}
+
+.footer__company__text {
+    font-family: var(--fontReg);
+    font-size: 0.875rem;
+    width: 15.25rem;
+    text-align: justify;
+    color: #b4ada7;
+}
+
+.footer__header__foot {
+    margin: 0;
+    font-family: var(--fontReg);
+    font-size: 1.25rem;
+    color: #555;
+    margin-top: 4rem;
+}
+
+
+.footer__company__socials {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.icon__bg {
+    height: 2.25rem;
+    width: 2.25rem;
+    background: #F5ECE3;
+    border-radius: 2rem;
+    position: relative;
+}
+
+.icon-style__company {
+
+    position: absolute;
+    height: 1rem;
+    fill: #ac907a;
+    top: 0.5rem;
+    left: -8.25rem;
+}
+
+.footer__company__socials--padding {
+    padding-right: 0.25rem;
+    padding-left: 0.25rem;
+}
+
+
+
+.icon-style {
+    height: 1.125rem;
+    width: 1.125rem;
+}
+
+.list--style {
+    list-style: none;
+}
+
+.footer__nav {
+    flex: 1;
+}
+
+.footer__nav__list__link {
+    text-decoration: none;
+    font-family: var(--fontReg);
+    color: #b4ada7;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.footer__nav__list__item {
+    margin-top: 1.5rem;
+}
+
+.footer__nav__list__item:first-child {
+    margin-top: 2.625rem;
+}
+
+.footer__products {
+    flex: 1;
+}
+
+.footer__products__link {
+    text-decoration: none;
+    font-family: var(--fontReg);
+    font-size: 0.875rem;
+    color: #b4ada7;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.footer__products__item {
+    margin-top: 1.5rem;
+}
+
+.footer__products__item:first-child {
+    margin-top: 2.625rem;
+}
+
+.footer__contacts {
+    flex: 1;
+}
+
+.footer__contacts__text {
+    font-family: var(--fontReg);
+    font-size: 0.875rem;
+    width: 15.25rem;
+    color: #b4ada7;
+    text-align: justify;
 }
