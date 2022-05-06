@@ -294,19 +294,23 @@ ul>div>div>li {
     color: #484848;
 }
 
-.Bio {
+.bio {
     background: #f5ece3;
 }
 
 .bio__container {
+    width: 90rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 .bio__image {
     flex: 1;
-    height: 100%;
-    
+}
+
+.bio__item {
+    width: 45rem;
 }
 
 .right-part {
@@ -509,6 +513,7 @@ ul>div>div>li {
     flex: 1; 
     display: flex;
     flex-direction: column;
+    margin-left: 2.5rem;
 }
 
 .footer__company__item {
