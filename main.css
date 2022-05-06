@@ -499,6 +499,7 @@ ul>div>div>li {
 
 .footer__main {
     margin: 0 auto;
+    height: 31.25rem;
     width: 81.25rem;
     display: flex;
     justify-content: center;
@@ -508,7 +509,6 @@ ul>div>div>li {
     flex: 1; 
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
 }
 
 .footer__company__item {
@@ -575,6 +575,7 @@ ul>div>div>li {
 
 .footer__nav {
     flex: 1;
+    margin-left: 7.5rem;
 }
 
 .footer__nav__list__link {
@@ -583,6 +584,11 @@ ul>div>div>li {
     color: #b4ada7;
     padding-left: 0;
     padding-right: 0;
+}
+
+.footer__nav__list__link:last-child {
+    margin-bottom: 2rem;
+    padding-bottom: 0;
 }
 
 .footer__nav__list__item {
@@ -624,4 +630,19 @@ ul>div>div>li {
     width: 15.25rem;
     color: #b4ada7;
     text-align: justify;
+}
+
+.icon-ratate {
+    rotate: 180deg;
+}
+
+.site-menu__text {
+    margin-top: 1.5rem;
+}
+
+.site-menu__text-row {
+    text-decoration: none;
+    color: #555;
+    font-family: var(--fontReg);
+    font-size: 1rem;
 }
