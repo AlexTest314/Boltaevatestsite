@@ -146,7 +146,7 @@ ul>div>div>li {
     left: 37%;
     font-size: 3.3rem;
     line-height: 1;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 .arrow {
@@ -244,6 +244,14 @@ ul>div>div>li {
     margin-right: 1.25rem;
     margin-bottom: 2rem;
     border-radius: 0.375rem;
+}
+
+.bio__container__mobile {
+    display: none;
+}
+
+.product__item__mobile {
+    display: none;
 }
 
 .product__item--size-top {
@@ -399,11 +407,9 @@ ul>div>div>li {
     position: relative;
     align-self: flex-end;
     background: #EEE4DA;
-    backdrop-filter: blur(14px);
     height: 5rem;
     width: 19.375rem;
     border-radius: 4rem;
-    
 }
 
 .insta__link {
@@ -440,6 +446,10 @@ ul>div>div>li {
     left: 4.5rem;
     margin: 0 auto;
     padding-bottom: 7.5rem;
+}
+
+.product__advertising__container__mobile {
+    display: none;
 }
 
 .product__advertising__item {
@@ -497,11 +507,14 @@ ul>div>div>li {
 .footer__header--color-brown {
     margin: 0;
     padding: 0;
+    width: 11.25rem;
     font-family: "CeraPro-Bold";
     color: #ae937e;
     font-size: 1.125rem;
+    text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.625rem;
+    
 }
 
 .footer__main {
@@ -510,6 +523,10 @@ ul>div>div>li {
     width: 81.25rem;
     display: flex;
     justify-content: center;
+}
+
+.footer__display-none {
+    display: none;
 }
 
 .footer__company {
@@ -531,6 +548,10 @@ ul>div>div>li {
     width: 15.25rem;
     text-align: justify;
     color: #b4ada7;
+}
+
+.footer__company__text__mobile {
+    display: none;
 }
 
 .footer__header__foot {
@@ -655,21 +676,56 @@ ul>div>div>li {
     font-size: 1rem;
 }
 
+.site-menu__text__mobile{
+    display: none;
+}
+
+.all__rights__mobile {
+    display: none;
+}
+
 /* Mobile */
 
-@media screen and (max-width: 24.375rem) {
+@media screen and (max-width: 1024px) {
 
     .head {
-        height: 5rem;
+        margin: 0 auto;
+        height: 20rem;
+        width: 19.5rem;
         display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
         align-content: flex-start;
         justify-content: space-between;
+        gap: 9rem;
+    }
+
+    .header-center__positon__mobile {
+        margin: 0 auto;
+        width: 18.125rem;
+        position: relative;
+
+    }
+
+    .header-center {
+        position: static;
+        font-size: 2rem;
+        text-align: center;
+        margin: 0 auto;
+        left: 3rem;
+        top: 17rem;
     }
     
     .head-block__bg--img {
         width: 100%;
         height: 37.375rem;
-        background: url(./img/bg/bg_head_mob.png);
+        background: url(./img/bg/bg_head_mob.png) center center /cover no-repeat;
+    }
+
+    .head__list {
+        top: 2.25rem;
+        width: 19.5rem;
+        height: 1.135rem;
     }
 
     .head__list--position-left {
@@ -682,26 +738,291 @@ ul>div>div>li {
     }
 
     .head__item--position-left {
+        padding: 0;
         display: block;
         width: 1.375rem;
         border-top: 0.125rem solid #fff;
         border-bottom: 0.125rem solid #fff;
+        height: 0.875rem;
+        margin-left: 2rem;
+    }
+
+    .head__list--position-center {
+        width: 17rem;
+        text-align: center;
     }
 
     .head__list--position-right {
-        width: 0;
+        width: 4rem;
+        left: 0rem;
     }
+
     .header {
-        margin: 0;
-        padding: 0;
-        color: #fff;
-        text-transform: uppercase;
-        letter-spacing: 0.5rem;
         font-size: 0.875rem;
-        font-family: "CeraPro-Bold";
     }
 
     .arrow {
         display: none;
+    }
+
+    .container__arrow {
+        width: 6rem;
+    }
+
+    .circle {
+        left: 35%;
+        height: 0.625rem;
+        width: 0.625rem;
+    }
+
+    .circle--bg-position2 {
+        left: 39%;
+    }
+    
+    .circle--bg-position3 {
+        left: 43%;
+    }
+    
+    .circle--bg-position4 {
+        left: 47%;
+    }
+    
+    .circle--bg-position5 {
+        left: 51%;
+    }
+
+    .product__item-site {
+        display: none;
+    }
+
+    .container {
+        margin: 0 auto;
+        display: flex;
+        width: 21.5rem;
+        flex-wrap: wrap;
+    }
+
+    .product__item__mobile {
+        display: block;
+        flex: 1;
+        height: 26.875rem;
+        width: 21.5rem;
+        margin-top: 0;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 2rem;
+    }
+
+    .product__item--size-top {
+        margin-top: 4.5rem;
+    }
+    
+    .product__item--size-bottom {
+        margin-bottom: 4.5rem;
+    }
+
+    .bio__container {
+        display: none;
+    }
+
+    .bio__container__mobile {
+        display: block;
+        width: 23.5rem;
+        margin: 0 auto;
+    }
+
+    .up-part__mobile {
+        margin: 0 auto 3.25rem auto;
+        width: 21.5rem;
+    }
+
+    .Bio-header__mobile{
+        margin: 0;
+        font-family: var(--fontBold);
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: #AC8F78;
+    }
+
+    .para1__mobile {
+        font-family: var(--fontThin);
+        font-size: 1.375rem;
+        color: #555555;
+    }
+
+    .para2__mobile {
+        font-family: var(--fontThin);
+        font-size: 1rem;
+        text-align: justify;
+        color: #555555;
+    }
+
+    .name__mobile {
+        font-size: 1.5rem;
+        font-family: var(--fontThin);
+        color: #555555;
+    }
+
+    .ps__mobile {
+        font-size: 0.875rem;
+        font-family: var(--fontThin);
+        color: #555555;
+    }
+
+    .advertising-head__container {
+        padding-top: 5.625rem;
+        padding-bottom: 3.125rem;
+        margin: 0 auto;
+        width: 23rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .phra {
+        margin: 0 auto;
+        padding-bottom: 1.875rem;
+        font-size: 1.875rem;
+        font-family: var(--fontThin);
+        width: 22rem;
+    }
+    
+    .insta-position {
+        margin: 0 auto;
+        width: 22rem;
+    }
+
+    .insta__link {
+       position: absolute;
+       left: 1.5rem;
+    }
+
+    .product__advertising__container {
+        display: none;
+    }
+
+    .product__advertising__container__mobile {
+        margin: 0 auto;
+        padding-bottom: 5.625rem;
+        display: block;
+        width: 21.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .product__advertising__item__mobile:nth-child(1) {
+        padding-bottom: 1rem;
+    }
+
+    .product__advertising__item__mobile:nth-child(2) {
+        padding-bottom: 1rem;
+    }
+
+    .footer__header {
+        margin: 0 auto;
+        width: 21.5rem;
+    }
+
+    .footer__contain {
+        height: 6.5rem;
+    }
+
+    .footer__header--color-brown {
+        text-align: center;
+    }
+
+    .footer__mobile--display-none {
+        display: none;
+    }
+
+    .footer__main {
+        display: none;
+    }
+
+    .footer__main__mobile {
+        margin: 0 auto;
+        width: 21.5rem;
+        height: 24rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer_company__mobile {
+        margin: 1.875rem auto 0 auto;        
+        height: 4.125rem;
+    }
+
+    .footer__company__text__mobile {
+        margin: 0 auto;
+        width: 20.75rem;
+        display: block;
+        font-size: 0.875rem;
+        font-family: var(--fontReg);
+        color: #b4ada7;
+        text-align: center;
+    }
+
+    .site-menu__text__mobile {
+        margin: 1.25rem auto 0 auto;
+        width: 21.5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer__contacts__mobile {
+        margin: 0 auto;
+    }    
+
+
+    .site-menu__text__mobile--bg {
+        display: block;
+        position: relative;
+        height: 3.125rem;
+        width: 10.25rem;
+        background: #F5ECE3;
+        border-radius: 4.125rem;
+    }
+
+    .site-menu__text-row__mobile {
+        flex: 1;
+        padding: 0;
+    }
+
+    .site-menu__text--position-left__mobile {
+        font-family: var(--fontReg);
+        font-size: 1rem;
+        color: #555555;
+        position: absolute;
+        left: 3rem;
+        top: 0.75rem;
+    }
+
+    .site-menu__text--position-right__mobile {
+        font-family: var(--fontReg);
+        font-size: 1rem;
+        color: #555555;
+        position: absolute;
+        left: 2rem;
+        top: 0.75rem;
+    }
+
+    .text__hover:hover {
+        color: #a76f6f;
+    }
+
+    .footer__company__socials__mobile {
+        margin: 2.5rem auto 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .all__rights__mobile {
+        display: block;
+        margin: 4rem auto 1.875rem auto;
+        color: #555555;
+        font-size: 0.875rem;
+        font-family: var(--fontThin);
+        opacity: 0.2;
     }
 }
