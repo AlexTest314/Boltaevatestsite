@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordering</title>
+    <link rel="stylesheet" href="./ordering.css">
+</head>
+<body>
+    <section class="head-block">
+        <div class="head-block__bg--img">
+            <header class="head">
+                <ul class="head__list">
+                    <div class="head__list--position-left">
+                    <li class="head__item head__item--font">
+                        <a href="#" class="head__link head__link--position-left head__link--font-size">Catalog</a>
+                    </li>
+                    <li class="head__item head__item--font">
+                        <a href="#" class="head__link head__link--position-left head__link--font-size">About</a>
+                    </li>
+                    <li class="head__item head__item--font">
+                        <a href="#" class="head__link head__link--position-left head__link--font-size">Delivery</a>
+                    </li>
+                </div>
+                <a href="#" class="head__item--position-left">
+                    
+                </a>
+                <div class="head__list--position-center">
+                    <h1 class="header">BOLTAEVA</h1>
+                </div>
+                <div class="head__list--position-right ">
+                    <li class="head__item head__item--font head__list--position-right_mobile">
+                        <a href="#" class="head__link head__link--font-size">Contacts</a>
+                    </li>
+                    <div class="head__item--position-right ">
+                    <li class="head__item head__list--position-right_mobile">
+                        <a href="#" class="head__link head__link--position-right">
+                            <svg class="search-icon icon--white">
+                                <use xlink:href="./img/icons-sprite.svg#sch"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="head__item">
+                        <a href="#" class="head__link head__link--position-right">
+                            <svg class="bag-icon icon--white">
+                                <use xlink:href="./img/icons-sprite.svg#bag"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="head__item head__list--position-right_mobile">
+                        <a href="#" class="head__link head__link--position-right">
+                            <svg class="login-icon icon--white">
+                                <use xlink:href="./img/icons-sprite.svg#log"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </div>
+                </div>
+              </ul>
+            </header>
+        </div>
+    </section>
+    <section class="order-section">
+        <form class="order-main">
+        <div class="checkout">
+            <h1 class="checkout__header">Checkout</h1>
+            <div class="checkout__username checkout__box--size">
+                <label class="checkout__box__header">Surname, name and patronymic</label>
+                <input type="text" name="" id="" class="username input__style" title="Please, enter your name">
+            </div>
+            <div class="checkout__city checkout__box--size">
+                <label class="checkout__box__header">Country, city, address</label>
+                <input type="text" name="" id="" class="country input__style" title="Please, enter your address">
+            </div>
+            <div class="checkout__contact checkout__box--size">
+                <label class="checkout__box__header">Contact number</label>
+                <input type="tel" name="" id="" class="tel input__style" title="Please, enter your number">
+            </div>
+            <div class="checkout__mail checkout__box--size">
+                <label class="checkout__box__header">Email</label>
+                <input type="email" name="" id="" class="email input__style" title="Please, enter your mail">
+            </div>
+        </div>
+        <div class="sign">
+            <label class="checkbox__favorite">
+                <!-- <svg class="love-icon">
+                    <use xlink:href="./img/icons-sprite.svg#love"></use>
+                </svg> -->
+                <input type="checkbox" name="" id="" title="Add favorite">
+                Add all products to favorites
+            </label>
+            <div class="sign__setup">
+                <h1 class="sign__setup__header sign__header--style">Set up in a couple of minutes</h1>
+                </div>
+            <p class="sign__par__reg">If you are already registered on the site, the you just need to enter your profile so as not to enter infomation again.</p>
+            <div class="sign__item">
+                <svg class="log-icon">
+                    <use xlink:href="./img/icons-sprite.svg#log"></use>
+                </svg>
+                <a href="#" class="sign__link">Sign in</a>
+            </div>
+            <div class="sign__delivery">
+                <h1 class="sign__delivery__header sign__header--style">Choose a shipping metod</h1>
+                <select name="" id="" class="post-company" placeholder="FedEX" title="Please, choose your post">
+                    <option value="FedEX" class="post-company__item">FedEX</option>
+                    <option value="NovaPost" class="post-company__item">NovaPost</option>
+                    <option value="UkrPost" class="post-company__item">UkrPost</option>
+                    <option value="Justin" class="post-company__item">Justin</option>
+                </select>
+                <select name="" id="" class="post-delivery" placeholder="Home" title="Please, choose your delivery">
+                    <option value="FedEX" class="post-delivery__item">Home</option>
+                    <option value="NovaPost" class="post-delivery__item">To post oficce</option>
+                    <option value="UkrPost" class="post-delivery__item">Сourier home</option>
+                    <option value="Justin" class="post-delivery__item">Justin help</option>
+                </select>
+                <div class="delivery__explanations">
+                    <p class="delivery__explanations__item">Shiping cost is calculated individually by the man</p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="order">
+            <div class="order__container">
+                
+            </div>
+        </div>
+    </form>
+    </section>
+    <section class="footer">
+        <div class="footer__header">
+            <div class="footer__contain">
+            <h1 class="footer__header--color-brown">Boltaeva</h1>
+        </div>
+        </div>
+        <div class="footer__main">
+            <div class="footer__company footer__mobile--display-none">
+                <h1 class="footer__company__header footer__company__item footer__header__foot">Company</h1>
+                <p class="footer__company__text footer__company__item">The brand strives to create respect for its products among the audience, so that the presence of the company's products is a sign of prestige.</p>
+                 <div class="footer__company__socials footer__company__item">
+                    <a href="#" class="footer__company__socials__fb footer__company__socials--padding">
+                        <div class="icon__bg">
+                        <svg class="icon-style__company">
+                            <use xlink:href="./img/icons-sprite.svg#fb"></use>
+                        </svg>
+                    </div>
+                    </a>
+                    <a href="#" class="footer__company__socials__insta footer__company__socials--padding">
+                        <div class="icon__bg">
+                        <svg class="icon-style__company">
+                            <use xlink:href="./img/icons-sprite.svg#insta"></use>
+                        </svg>
+                    </div>
+                    </a>
+                    <a href="#" class="footer__company__socials__twitter footer__company__socials--padding">
+                        <div class="icon__bg">
+                        <svg class="icon-style__company">
+                            <use xlink:href="./img/icons-sprite.svg#tw"></use>
+                        </svg>
+                    </div>
+                    </a>
+                    <a href="#" class="footer__company__socials__youtube footer__company__socials--padding">
+                        <div class="icon__bg">
+                        <svg class="icon-style__company">
+                            <use xlink:href="./img/icons-sprite.svg#Yt"></use>
+                        </svg>
+                    </div>
+                    </a>
+                    <a href="#" class="footer__company__socials__tel footer__company__socials--padding">
+                        <div class="icon__bg">
+                        <svg class="icon-style__company">
+                            <use xlink:href="./img/icons-sprite.svg#tg"></use>
+                        </svg>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <nav class="footer__nav footer__mobile--display-none">
+                <h1 class="footer__nav__header footer__header__foot">Navigation</h1>
+                <ul class="footer__nav__list list--style">
+                    <li class="footer__nav__list__item">
+                        <a href="#" class="footer__nav__list__link">Product catalog</a> 
+                    </li>
+                    <li class="footer__nav__list__item">
+                        <a href="#" class="footer__nav__list__link">About company</a> 
+                    </li>
+                    <li class="footer__nav__list__item">
+                        <a href="#" class="footer__nav__list__link">Bonus program</a> 
+                    </li>
+                    <li class="footer__nav__list__item">
+                        <a href="#" class="footer__nav__list__link">Work process</a> 
+                    </li>
+                    <li class="footer__nav__list__item">
+                        <a href="#" class="footer__nav__list__link">Partners</a> 
+                    </li>
+                    <li class="footer__nav__list__item">
+                        <a href="#" class="footer__nav__list__link">Privat Policy</a> 
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer__products footer__mobile--display-none">
+                <h1 class="footer__products__header footer__header__foot">Products</h1>
+                <ul class="footer__products__list list--style">
+                    <li class="footer__products__item">
+                        <a href="#" class="footer__products__link">Care cosmetics</a>
+                    </li>
+                    <li class="footer__products__item">
+                        <a href="#" class="footer__products__link">Eyebrow cosmetics</a>
+                    </li>
+                    <li class="footer__products__item">
+                        <a href="#" class="footer__products__link">Decorative cosmetics</a>
+                    </li>
+                    <li class="footer__products__item">
+                        <a href="#" class="footer__products__link">New in the collection</a>
+                    </li>
+                    <li class="footer__products__item">
+                        <a href="#" class="footer__products__link">Box and complect</a>
+                    </li>
+                    <li class="footer__products__item">
+                        <a href="#" class="footer__products__link">Accessories</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__contacts footer__mobile--display-none">
+                <h1 class="footer__contacts__header footer__header__foot">Contacts</h1>
+                <p class="footer__contacts__text">We are open to new opportunities, so you can contact our company representatives for any questions</p>
+                <div class="site-menu__text">
+                    <a href="mailto:support@yourhelp.com" class="site-menu__text-row">
+                        <svg class="icon-style icon-ratate">
+                            <use xlink:href="./img/icons-sprite.svg#mail"></use>
+                        </svg>
+                        E-mail
+                    </a>
+                    <a href="whatsapp://+380123892388" class="site-menu__text-row">
+                        <svg class="icon-style ">
+                            <use xlink:href="./img/icons-sprite.svg#wa"></use>
+                        </svg>
+                        Whatsapp
+                    </a>
+             </div>
+            </div>
+        </div>
+            <div class="footer__main__mobile">
+                <div class="footer_company__mobile">
+            <p class="footer__company__text__mobile">The brand strives to create respect for its products among the audience, so that the presence of the company's products is a sign of prestige.</p>
+        </div>
+            <div class="site-menu__text__mobile">
+                <a href="mailto:support@yourhelp.com" class="site-menu__text-row__mobile">
+                    <div class="site-menu__text__mobile--bg">
+                        <div class="site-menu__text--position-left__mobile text__hover">
+                    <svg class="icon-style icon-ratate">
+                        <use xlink:href="./img/icons-sprite.svg#mail"></use>
+                    </svg>
+                    E-mail
+                </div>
+                </div>
+                </a>
+                <a href="whatsapp://+380123892388" class="site-menu__text-row__mobile">
+                    <div class="site-menu__text__mobile--bg">
+                        <div class="site-menu__text--position-right__mobile">
+                    <svg class="icon-style ">
+                        <use xlink:href="./img/icons-sprite.svg#wa"></use>
+                    </svg>
+                    Whatsapp
+                </div>
+                </div>
+                </a>
+         </div>
+            <div class="footer__company__socials__mobile footer__display-none">
+                <a href="#" class="footer__company__socials__fb footer__company__socials--padding">
+                    <div class="icon__bg">
+                    <svg class="icon-style__company">
+                        <use xlink:href="./img/icons-sprite.svg#fb"></use>
+                    </svg>
+                </div>
+                </a>
+                <a href="#" class="footer__company__socials__insta footer__company__socials--padding">
+                    <div class="icon__bg">
+                    <svg class="icon-style__company">
+                        <use xlink:href="./img/icons-sprite.svg#insta"></use>
+                    </svg>
+                </div>
+                </a>
+                <a href="#" class="footer__company__socials__twitter footer__company__socials--padding">
+                    <div class="icon__bg">
+                    <svg class="icon-style__company">
+                        <use xlink:href="./img/icons-sprite.svg#tw"></use>
+                    </svg>
+                </div>
+                </a>
+                <a href="#" class="footer__company__socials__youtube footer__company__socials--padding">
+                    <div class="icon__bg">
+                    <svg class="icon-style__company">
+                        <use xlink:href="./img/icons-sprite.svg#Yt"></use>
+                    </svg>
+                </div>
+                </a>
+                <a href="#" class="footer__company__socials__tel footer__company__socials--padding">
+                    <div class="icon__bg">
+                    <svg class="icon-style__company">
+                        <use xlink:href="./img/icons-sprite.svg#tg"></use>
+                    </svg>
+                </div>
+                </a>
+            </div>
+            
+            <div class="all__rights__mobile">
+                <p> All rights reserved (c) BOLTAEVA 2022</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
