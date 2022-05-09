@@ -84,9 +84,6 @@
         </div>
         <div class="sign">
             <label class="checkbox__favorite">
-                <!-- <svg class="love-icon">
-                    <use xlink:href="./img/icons-sprite.svg#love"></use>
-                </svg> -->
                 <input type="checkbox" name="" id="" title="Add favorite">
                 Add all products to favorites
             </label>
@@ -122,7 +119,69 @@
         </div>
         <div class="order">
             <div class="order__container">
-                
+                <div class="container__top">
+                    <h1 class="top__header">
+                        Order
+                    </h1>
+                    <div class="top__calc-products">
+                        8 products
+                    </div>
+                    <div class="top__arrows">
+                        <div class="top__arrows--bg">
+                            <a href="#" class="top__arrow-left">
+                                <svg class="arrow__icon--style">
+                                    <use xlink:href="./img/icons-sprite.svg#left_arrow"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="top__arrow-right">
+                                <svg class="arrow__icon--style">
+                                    <use xlink:href="./img/icons-sprite.svg#right_arrow"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container__products">
+                    <ul class="products__list">
+                        <li class="products__item">
+                        <img src="./img/order/pic_order_01.png" alt="Products image">
+                        </li>
+                        <li class="products__item">
+                            <img src="./img/order/pic_order_02.png" alt="Products image">
+                        </li>
+                        <li class="products__item">
+                            <img src="./img/order/pic_order_03.png" alt="Products image">
+                        </li>
+                        <li class="products__item">
+                            <img src="./img/order/pic_order_04.png" alt="Products image">
+                        </li>
+                        <li class="products__item">
+                            <img src="./img/order/pic_order_05.png" alt="Products image">
+                        </li>
+                        <li class="products__item">
+                            <img src="./img/order/pic_order_06.png" alt="Products image">
+                        </li>
+                    </ul>
+                </div>
+                <div class="product__price">
+                    <div class="price__total price-style">
+                        Total:
+                    </div>
+                    <div class="price price-style">
+                        54€
+                    </div>
+                </div>
+                <div class="order__button">
+                    <input type="button" value="Send your oreder →" class="button">
+                </div>
+                <div class="order__edit">
+                    <label for="button2">
+                        <svg class="button2__icon">
+                            <use xlink:href="./img/icons-sprite.svg#pencil"></use>
+                        </svg>
+                        <input type="button" value="Edit this order" class="button2">
+                    </label>
+                </div>
             </div>
         </div>
     </form>
