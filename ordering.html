@@ -17,7 +17,7 @@
                         <a href="#" class="head__link head__link--position-left head__link--font-size">Catalog</a>
                     </li>
                     <li class="head__item head__item--font">
-                        <a href="#" class="head__link head__link--position-left head__link--font-size">About</a>
+                        <a href="./index.html" class="head__link head__link--position-left head__link--font-size">About</a>
                     </li>
                     <li class="head__item head__item--font">
                         <a href="#" class="head__link head__link--position-left head__link--font-size">Delivery</a>
@@ -83,10 +83,26 @@
             </div>
         </div>
         <div class="sign">
-            <label class="checkbox__favorite">
-                <input type="checkbox" name="" id="" title="Add favorite">
+            <div class="favotite__container">
+                <label for="like" class="checkbox__favorite1">
+                    <svg class="checkbox-icon1">
+                        <use xlink:href="./img/icons-sprite.svg#like"></use>
+                    </svg>           
+                </label>
+                    
+                
+            <input type="checkbox" name="" id="like" title="Add favorite" class="hidden">
+            
+            <label class="checkbox-icon__item" for="like" >
+                <svg class="checkbox-icon2">
+                    <use xlink:href="./img/icons-sprite.svg#like_1"></use>
+                </svg>
+            </label>  
+            <label class="checkbox__favorite" for="like" >   
                 Add all products to favorites
             </label>
+            
+        </div>
             <div class="sign__setup">
                 <h1 class="sign__setup__header sign__header--style">Set up in a couple of minutes</h1>
                 </div>
@@ -284,13 +300,13 @@
                 <h1 class="footer__contacts__header footer__header__foot">Contacts</h1>
                 <p class="footer__contacts__text">We are open to new opportunities, so you can contact our company representatives for any questions</p>
                 <div class="site-menu__text">
-                    <a href="mailto:support@yourhelp.com" class="site-menu__text-row">
+                    <a href="mailto:support@yourhelp.com" class="site-menu__text-row--left">
                         <svg class="icon-style icon-ratate">
                             <use xlink:href="./img/icons-sprite.svg#mail"></use>
                         </svg>
                         E-mail
                     </a>
-                    <a href="whatsapp://+380123892388" class="site-menu__text-row">
+                    <a href="whatsapp://+380123892388" class="site-menu__text-row--right">
                         <svg class="icon-style ">
                             <use xlink:href="./img/icons-sprite.svg#wa"></use>
                         </svg>

@@ -186,18 +186,68 @@ ul>div>div>li {
     border-bottom: 1px solid rgba(0,0,0, 0.05);
 }
 
+.input__style {
+    outline: none;
+}
+
+.input__style:focus {
+    border-bottom: 2px solid rgba(0,0,0, 0.1);
+}
+
 .sign {
     margin-left: 4.75rem;
     width: 18rem;
     height: 100%;
 }
 
-.checkbox__favorite {
+.checkbox__favorite1 {
+    display: flex;
+    position: relative;
+}
+.favotite__container {
     margin-top: 7.75rem;
+    display: flex;
+}
+
+.checkbox-icon1 {
+    height: 1rem;
+    width: 1rem;
+    fill: #AC8F78;
+    cursor: pointer;
+    display: block; 
+    position: absolute;
+}
+
+.checkbox-icon2 {
+    height: 1rem;
+    width: 1rem;
+    fill: red;
+    cursor: pointer;
+    display: block;
+    opacity: 1;
+}
+
+.checkbox-icon__item {
+    opacity: 0;
+}
+
+
+input[type='checkbox']:checked ~ .checkbox-icon__item{
+    opacity: 1;
+}
+
+.hidden {
+    position: absolute;
+    opacity: 0;
+}
+
+.checkbox__favorite {
     font-family: var(--fontReg);
+    margin-left: 0.754rem;
     font-size: 0.875rem;
     color: #555555;
     display: block;
+    cursor: pointer;
 }
 
 .sign__setup {
@@ -220,7 +270,10 @@ ul>div>div>li {
 
 .sign__item {
     margin-top: 1.125rem;
+    display: flex;
+    align-items: center;
 }
+
 .sign__link {
     font-family: var(--fontReg);
     font-size: 1rem;
@@ -233,6 +286,8 @@ ul>div>div>li {
 }
 
 .log-icon {
+    display: block;
+    margin-top: 0.1rem;
     width: 1rem;
     height: 1.125rem;
     fill: #AC8F78;
@@ -591,13 +646,25 @@ ul>div>div>li {
 
 .site-menu__text {
     margin-top: 1.5rem;
+    display: flex;
 }
 
-.site-menu__text-row {
+.site-menu__text-row--left {
     text-decoration: none;
     color: #555555;
     font-family: var(--fontReg);
     font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.site-menu__text-row--right {
+    text-decoration: none;
+    color: #555555;
+    font-family: var(--fontReg);
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
 }
 
 .site-menu__text__mobile{
@@ -727,7 +794,15 @@ ul>div>div>li {
     .checkbox__favorite {
         margin-top: 4.375rem;
     }
-    
+
+    .checkbox-icon__item {
+        margin-top: 4.5rem;
+    }
+
+    .checkbox-icon1 {
+        margin-top: 4.5rem;
+    }
+   
     .sign__setup {
         margin-top: 2rem;
        }
