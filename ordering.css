@@ -922,6 +922,14 @@ input[type='checkbox']:checked ~ .checkbox-icon__item{
         top: 0.75rem;
     }
 
+    .site-menu__text--position-left__mobile {
+        display: flex;
+    }
+
+    .site-menu__text--position-right__mobile {
+        display: flex;
+    }
+
     .text__hover:hover {
         color: #a76f6f;
     }

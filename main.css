@@ -420,6 +420,7 @@ ul>div>div>li {
     left: 0.3rem;
     top: 0rem;
     padding: 2rem 6.25rem;
+    display: flex;
 }
 
 .insta__link:hover {
